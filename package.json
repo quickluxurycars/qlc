@@ -1,0 +1,21 @@
+{
+  "name": "qlc",
+  "version": "1.0.0",
+  "description": "A NextJS static website for business Quick Luxury Cars. Domain: www.quickluxurycars.in",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucket.org/codekraftsai/qlc.git"
+  },
+  "author": "codekraftsai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://bitbucket.org/codekraftsai/qlc/issues"
+  },
+  "homepage": "https://bitbucket.org/codekraftsai/qlc#readme",
+  "dependencies": {
+  }
+}
