@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 import {
   Navbar,
   Collapse,
-  Typography,
   IconButton,
 } from "@material-tailwind/react";
 import Link from "next/link";

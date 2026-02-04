@@ -1,5 +1,6 @@
 'use client';
 import { Carousel } from "@material-tailwind/react";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -20,19 +21,25 @@ export default function Home() {
           onPointerEnterCapture={undefined} 
           onPointerLeaveCapture={undefined}
         >
-          <img
+          <Image
             src="/images/cars/audi_a3/1.jpeg"
             alt="image 1"
-            className="h-[300px] md:h-[485px] w-full object-cover" // Responsive height
-          />
-          <img
-            src="/images/cars/hummer/1.jpeg"
-            alt="image 2"
+            width={862}
+            height={485}
             className="h-[300px] md:h-[485px] w-full object-cover"
           />
-          <img
+          <Image
+            src="/images/cars/hummer/1.jpeg"
+            alt="image 2"
+            width={862}
+            height={485}
+            className="h-[300px] md:h-[485px] w-full object-cover"
+          />
+          <Image
             src="/images/cars/mercedes_c300/1.jpeg"
             alt="image 3"
+            width={862}
+            height={485}
             className="h-[300px] md:h-[485px] w-full object-cover"
           />
         </Carousel>
