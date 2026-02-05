@@ -15,13 +15,13 @@ export default function AboutUs() {
         <section className="space-y-6">
           <div className="text-center mb-8">
             <h2 className="text-4xl md:text-5xl font-serif text-gray-900 dark:text-white mb-4">
-              At QLC, luxury is not an upgrade—it's a standard.
+              At QLC, luxury is not an upgrade—it&apos;s a standard.
             </h2>
           </div>
           <div className="space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
             <p>
               We specialize in providing an exclusive selection of high-end and exotic vehicles for those who value 
-              elegance, performance, and comfort in every journey. Whether you're arriving for business, celebrating 
+              elegance, performance, and comfort in every journey. Whether you&apos;re arriving for business, celebrating 
               a milestone, or simply choosing to drive something extraordinary, we ensure your experience is seamless 
               from start to finish.
             </p>
@@ -37,7 +37,7 @@ export default function AboutUs() {
             </p>
             <p>
               Based in Delhi, we serve discerning clients who expect reliability, privacy, and a level of service 
-              that goes beyond the ordinary. With QLC, every drive is more than transportation—it's a statement.
+              that goes beyond the ordinary. With QLC, every drive is more than transportation—it&apos;s a statement.
             </p>
             <p className="text-xl font-serif text-[#C9A961] text-center pt-4">
               Experience the art of refined mobility.
@@ -107,7 +107,7 @@ export default function AboutUs() {
           <div className="bg-gradient-to-r from-[#C9A961]/10 to-transparent dark:from-[#C9A961]/20 dark:to-transparent rounded-xl p-8 border-l-4 border-[#C9A961]">
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
               Our luxury cars are ready to zoom you for important occasions where you want to make an impression, 
-              whether it's a business deal or a personal one. There are times in life when you want to make 
+              whether it&apos;s a business deal or a personal one. There are times in life when you want to make 
               yourself and someone special, or when you need to represent who you are on a formal vacation, 
               thus you can now rent our luxury cruises with our wonderful packs.
             </p>

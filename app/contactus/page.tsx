@@ -138,7 +138,7 @@ export default function ContactUs() {
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-serif mb-4 text-[#C9A961]">Contact Us</h1>
           <p className="text-xl text-gray-300 dark:text-gray-400">
-            We're Ready When You Are
+            We&apos;re Ready When You Are
           </p>
           <p className="mt-4 text-gray-400">
             Get in touch for reservations, pricing, or any assistance you need. Our experts are available to guide you every step of the way.
@@ -194,7 +194,7 @@ export default function ContactUs() {
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="carModel" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                    Car You're Interested In*
+                    Car You&apos;re Interested In*
                   </label>
                   <select
                     id="carModel"
@@ -283,7 +283,7 @@ export default function ContactUs() {
                   <span className="text-2xl">✓</span>
                   <div>
                     <p className="font-semibold">Success!</p>
-                    <p>Thank you! Your inquiry has been submitted successfully. We'll get back to you soon.</p>
+                    <p>Thank you! Your inquiry has been submitted successfully. We&apos;ll get back to you soon.</p>
                   </div>
                 </div>
               )}
