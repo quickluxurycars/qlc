@@ -1,6 +1,7 @@
 
 import "./globals.css";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 import { Libre_Baskerville } from 'next/font/google';
 
@@ -16,6 +17,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
