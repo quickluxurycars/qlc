@@ -31,6 +31,11 @@ export default function StickyNavbar() {
     );
   }, []);
 
+  // Close menu when a navigation link is clicked
+  const handleNavClick = () => {
+    setOpenNav(false);
+  };
+
   // Shared Nav List Component
   const navList = (
     <ul className="flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-8">
@@ -43,6 +48,7 @@ export default function StickyNavbar() {
             <Link 
               href={href} 
               className="navbar-link"
+              onClick={handleNavClick}
               style={{ 
                 color: isActive ? "var(--brand-gold)" : "white" 
               }}
@@ -109,7 +115,10 @@ export default function StickyNavbar() {
       </div>
 
       {/* Mobile Collapsible Menu */}
-      <Collapse open={openNav}>
+      <Collapse 
+        open={openNav}
+        className="transition-all duration-400 ease-in-out"
+      >
         <div className="container mx-auto pb-4">
           {navList}
           <div className="flex items-center gap-x-4 pt-2 border-t border-gray-800">

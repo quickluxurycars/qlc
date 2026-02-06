@@ -1,6 +1,7 @@
 'use client';
 import { Carousel } from "@material-tailwind/react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -50,6 +51,11 @@ export default function Home() {
         <p className="max-w-2xl text-base md:text-lg text-gray-700">
           Experience world-class luxury cars curated for those who demand more than just a ride. From iconic supercars to elegant sedans and powerful SUVs, we deliver unmatched comfort, style, and performance — every time you drive.
         </p>
+        <Link href="/collection">
+          <button className="mt-8 px-8 py-3 bg-gradient-to-r from-amber-500 to-yellow-600 text-black font-semibold rounded-lg shadow-lg hover:from-amber-600 hover:to-yellow-700 transform hover:scale-105 transition-all duration-300 ease-in-out">
+            Explore Our Collection
+          </button>
+        </Link>
       </div>
     </div>
   );

@@ -132,20 +132,7 @@ export default function ContactUs() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-black transition-colors">
-      {/* Hero Section */}
-      <div className="bg-black dark:bg-gray-950 text-white py-20 px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-serif mb-4 text-[#C9A961]">Contact Us</h1>
-          <p className="text-xl text-gray-300 dark:text-gray-400">
-            We&apos;re Ready When You Are
-          </p>
-          <p className="mt-4 text-gray-400">
-            Get in touch for reservations, pricing, or any assistance you need. Our experts are available to guide you every step of the way.
-          </p>
-        </div>
-      </div>
-
+    <div className="min-h-screen transition-colors">
       {/* Main Content */}
       <div className="max-w-7xl mx-auto px-6 py-16">
         {/* Contact Form */}
@@ -344,7 +331,7 @@ export default function ContactUs() {
                 <span className="text-2xl">📍</span> Address
               </h3>
               <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                C-1<br />
+                E-1<br />
                 Suraksha Apartments, Abhay Khand 3<br />
                 Indirapuram, Ghaziabad - 201010
               </p>
@@ -372,6 +359,17 @@ export default function ContactUs() {
               </p>
             </div>
           </div>
+        </div>
+
+        {/* Call to Action Section */}
+        <div className="mt-16 text-center max-w-3xl mx-auto">
+          <div className="flex flex-col items-center">
+            <hr className="border-t border-gray-400 dark:border-gray-600 mb-4 w-72" />
+            <h2 className="text-3xl md:text-4xl font-serif text-[#C9A961]">We&apos;re Ready When You Are</h2>
+          </div>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mt-4">
+            Get in touch for reservations, pricing, or any assistance you need. Our experts are available to guide you every step of the way.
+          </p>
         </div>
       </div>
     </div>

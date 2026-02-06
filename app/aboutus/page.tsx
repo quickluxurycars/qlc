@@ -1,13 +1,6 @@
 export default function AboutUs() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-black transition-colors">
-      {/* Hero Section */}
-      <div className="bg-black dark:bg-gray-950 text-white py-20 px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-serif mb-4 text-[#C9A961]">About Us</h1>
-          <p className="text-xl text-gray-300 dark:text-gray-400">We don’t just rent cars. We curate experiences for those who expect more from every drive.</p>
-        </div>
-      </div>
+    <div className="min-h-screen transition-colors">
 
       {/* Main Content */}
       <div className="max-w-5xl mx-auto px-6 py-16 space-y-12">
