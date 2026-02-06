@@ -1,9 +1,9 @@
 'use client';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { cars } from '../data/cars';
 
-export default function ContactUs() {
+function ContactUsForm() {
   const searchParams = useSearchParams();
   const prefilledCar = searchParams.get('car');
 
@@ -373,5 +373,13 @@ export default function ContactUs() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function ContactUs() {
+  return (
+    <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><p>Loading...</p></div>}>
+      <ContactUsForm />
+    </Suspense>
   );
 }
