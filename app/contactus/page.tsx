@@ -1,11 +1,16 @@
 'use client';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useSearchParams } from 'next/navigation';
+import { cars } from '../data/cars';
 
 export default function ContactUs() {
+  const searchParams = useSearchParams();
+  const prefilledCar = searchParams.get('car');
+
   const [formData, setFormData] = useState({
     name: '',
     contact: '',
-    carModel: '',
+    carModel: prefilledCar || '',
     rentalDuration: '',
     bookingDate: '',
     remarks: ''
@@ -14,19 +19,14 @@ export default function ContactUs() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'success' | 'error' | null>(null);
 
-  const carModels = [
-    'Mercedes G63',
-    'Mercedes E400',
-    'Mercedes C300',
-    'Rolls Royce',
-    'Audi A3',
-    'Hummer H2',
-    'Maybach',
-    'Jaguar',
-    'Range Rover',
-    'Mustang',
-    'Other'
-  ];
+  // Update carModel when prefilled car changes
+  useEffect(() => {
+    if (prefilledCar) {
+      setFormData(prev => ({ ...prev, carModel: prefilledCar }));
+    }
+  }, [prefilledCar]);
+
+  const carModels = [...cars.map(car => car.name), 'Other'];
 
   const rentalDurations = [
     '4 hours',
