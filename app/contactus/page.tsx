@@ -73,16 +73,18 @@ function ContactUsForm() {
       const year = dateObj.getFullYear().toString();
       const month = (dateObj.getMonth() + 1).toString();
       const day = dateObj.getDate().toString();
+      const googleCarModel = formData.carModel === 'Other' ? 'Option 10' : formData.carModel;
+      const normalizedRemarks = formData.remarks.trim();
       
       const formBody = new URLSearchParams();
       formBody.append('entry.634883967', formData.name.trim());
       formBody.append('entry.1351199764', formData.contact.trim());
-      formBody.append('entry.232425082', formData.carModel);
+      formBody.append('entry.232425082', googleCarModel);
       formBody.append('entry.522611408', formData.rentalDuration);
       formBody.append('entry.1737053830_year', year);
       formBody.append('entry.1737053830_month', month);
       formBody.append('entry.1737053830_day', day);
-      formBody.append('entry.415551485', formData.remarks.trim());
+      formBody.append('entry.415551485', normalizedRemarks);
 
       // Create a timeout promise
       const timeoutPromise = new Promise((_, reject) => 
