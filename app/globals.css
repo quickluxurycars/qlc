@@ -29,10 +29,12 @@ a {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: var(--font-libre-baskerville), 'Libre Baskerville', serif;
+  font-family: var(--font-plus-jakarta-sans), 'Plus Jakarta Sans', sans-serif;
   position: relative;
   overflow-x: hidden;
 }
+
+/* Diamond/Rhombus pattern background */
 body::before {
   content: '';
   position: fixed;
@@ -48,13 +50,13 @@ body::before {
   background-size: 150px;
 
   /* Fade effect: visible only on top left and bottom right */
-  mask-image: 
+  mask-image:
     radial-gradient(ellipse 1100px 1100px at 0% 0%, black 0%, transparent 75%),
     radial-gradient(ellipse 1100px 1100px at 100% 100%, black 0%, transparent 75%);
-  -webkit-mask-image: 
+  -webkit-mask-image:
     radial-gradient(ellipse 1100px 1100px at 0% 0%, black 0%, transparent 75%),
     radial-gradient(ellipse 1100px 1100px at 100% 100%, black 0%, transparent 75%);
-  
+
   mask-composite: add;
   -webkit-mask-composite: source-over;
 
@@ -67,9 +69,61 @@ body::before {
 
 /* 3. Your specific class */
 .navbar-link {
-  font-family: 'Libre Baskerville', serif;
+  font-family: var(--font-libre-baskerville), 'Libre Baskerville', serif;
   font-size: 24px;
   line-height: 1;
   white-space: nowrap;
   transition: color 0.3s ease;
+}
+
+/* Glass morphism utilities */
+.glass {
+  background: rgba(18, 18, 22, 0.72);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-light {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Ambient glow effects */
+.ambient-glow-primary {
+  background: radial-gradient(circle, rgba(242, 202, 80, 0.1) 0%, transparent 70%);
+}
+
+.ambient-glow-secondary {
+  background: radial-gradient(circle, rgba(231, 195, 90, 0.08) 0%, transparent 70%);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #131315;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C9A24D;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
+
+/* Hide scrollbar for horizontal scrolling elements */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

@@ -16,8 +16,8 @@ const placeholderProps = {
   placeholder: undefined,
   onPointerEnterCapture: undefined,
   onPointerLeaveCapture: undefined,
-  onResize: undefined,         // Added this
-  onResizeCapture: undefined,  // Added this
+  onResize: undefined,
+  onResizeCapture: undefined,
 };
 export default function StickyNavbar() {
   const [openNav, setOpenNav] = useState(false);
@@ -45,12 +45,12 @@ export default function StickyNavbar() {
 
         return (
           <li key={link}>
-            <Link 
-              href={href} 
+            <Link
+              href={href}
               className="navbar-link"
               onClick={handleNavClick}
-              style={{ 
-                color: isActive ? "var(--brand-gold)" : "white" 
+              style={{
+                color: isActive ? "var(--brand-gold)" : "white"
               }}
             >
               {link}
@@ -62,22 +62,22 @@ export default function StickyNavbar() {
   );
 
   return (
-    <Navbar 
-      className="sticky top-0 z-50 h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4 bg-black border-none" 
+    <Navbar
+      className="sticky top-0 z-50 h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4 glass border-none"
       {...placeholderProps}
     >
       {/* Desktop Layout: 3 Columns */}
       <div className="grid grid-cols-2 lg:grid-cols-3 items-center text-white">
-        
+
         {/* 1. Left Column: Logo */}
         <div className="flex justify-start">
           <Link href="/" className="cursor-pointer py-1.5">
-            <Image 
-              src={logo} 
-              alt="Logo" 
-              width={50} 
-              height={50} 
-              className="rounded-xl"
+            <Image
+              src={logo}
+              alt="Logo"
+              width={120}
+              height={120}
+              className="rounded-xl max-h-14 w-auto"
             />
           </Link>
         </div>
@@ -91,11 +91,11 @@ export default function StickyNavbar() {
         <div className="flex items-center justify-end gap-4">
           {/* Socials (Desktop only) */}
           <div className="hidden lg:flex items-center gap-4">
-            <a href="https://www.instagram.com/quickluxurycars" target="_blank">
-              <FaInstagram size={22} className="hover:text-pink-500 transition-colors" />
+            <a href="https://www.instagram.com/quickluxurycars" target="_blank" className="text-gold-light hover:text-primary transition-colors">
+              <FaInstagram size={22} />
             </a>
-            <a href="#">
-              <FaFacebook size={22} className="hover:text-blue-600 transition-colors" />
+            <a href="#" className="text-gold-light hover:text-primary transition-colors">
+              <FaFacebook size={22} />
             </a>
           </div>
 
@@ -115,15 +115,19 @@ export default function StickyNavbar() {
       </div>
 
       {/* Mobile Collapsible Menu */}
-      <Collapse 
+      <Collapse
         open={openNav}
         className="transition-all duration-400 ease-in-out"
       >
         <div className="container mx-auto pb-4">
           {navList}
           <div className="flex items-center gap-x-4 pt-2 border-t border-gray-800">
-            <FaInstagram size={22} color="#FFFFFF" />
-            <FaFacebook size={22} color="#FFFFFF" />
+            <a href="https://www.instagram.com/quickluxurycars" target="_blank" className="text-gold-light">
+              <FaInstagram size={22} />
+            </a>
+            <a href="#" className="text-gold-light">
+              <FaFacebook size={22} />
+            </a>
           </div>
         </div>
       </Collapse>

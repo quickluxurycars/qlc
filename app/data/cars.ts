@@ -10,7 +10,7 @@ export interface Car {
 }
 
 export const cars: Car[] = [
-  { id: '1', name: 'Audi A3', brand: 'Audi', type: 'Sedan', seating: 4, color: 'Black', rating: 5, images: ['/images/cars/audi_a3/1.jpeg', '/images/cars/audi_a3/2.jpeg', '/images/cars/audi_a3/3.jpeg'] },
+  { id: '1', name: 'Audi A3', brand: 'Audi', type: 'Convertible', seating: 4, color: 'Black', rating: 5, images: ['/images/cars/audi_a3/1.jpeg', '/images/cars/audi_a3/2.jpeg', '/images/cars/audi_a3/3.jpeg'] },
   { id: '2', name: 'Mercedes E400', brand: 'Mercedes', type: 'Sedan', seating: 4, color: 'White', rating: 5, images: ['/images/cars/mercedes_e400/1.jpeg', '/images/cars/mercedes_e400/2.jpeg', '/images/cars/mercedes_e400/3.jpeg'] },
   { id: '3', name: 'Mercedes G63', brand: 'Mercedes', type: 'SUV', seating: 6, color: 'Black', rating: 5, images: ['/images/cars/mercedes_g63/1.jpeg', '/images/cars/mercedes_g63/2.jpeg', '/images/cars/mercedes_g63/3.jpeg'] },
   { id: '4', name: 'Mercedes C300', brand: 'Mercedes', type: 'Sedan', seating: 4, color: 'White', rating: 5, images: ['/images/cars/mercedes_c300/1.jpeg', '/images/cars/mercedes_c300/2.jpeg', '/images/cars/mercedes_c300/3.jpeg'] },
