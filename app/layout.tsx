@@ -68,6 +68,9 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+  verification: {
+    google: '9GipYLPFgBelUCE3suvs7d4yEVWS6d5xcalvtKWe-Pg',
+  },
 
 };
 
@@ -75,6 +78,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${libreBaskerville.variable} ${playfairDisplay.variable} ${plusJakartaSans.variable}`}>
       <head>
+        <meta name="google-site-verification" content="9GipYLPFgBelUCE3suvs7d4yEVWS6d5xcalvtKWe-Pg" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
