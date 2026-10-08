@@ -146,9 +146,9 @@ function ContactUsForm() {
           {/* Contact Form */}
           <div className="mb-16">
             <div className="max-w-3xl mx-auto glass rounded-2xl shadow-xl p-8 md:p-12 border border-gold-subtle">
-              <h2 className="text-3xl md:text-4xl text-text-primary font-headline-lg mb-8 text-center">
+              <h1 className="text-3xl md:text-4xl text-text-primary font-headline-lg mb-8 text-center">
                 Book Your Luxury Experience
-              </h2>
+              </h1>
             
             <form onSubmit={handleSubmit} className="space-y-6">
               {/* Name Field */}

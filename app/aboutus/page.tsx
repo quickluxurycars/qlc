@@ -18,9 +18,9 @@ export default function AboutUs() {
                 <span className="text-sm uppercase tracking-[0.2em] text-gold-burnished">About Quick Luxury Cars</span>
                 <span className="w-8 h-px bg-primary"></span>
               </div>
-              <h2 className="text-4xl md:text-5xl lg:text-6xl text-text-primary font-headline-lg mb-4">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl text-text-primary font-headline-lg mb-4">
                 At QLC, luxury is not an upgrade—it&apos;s a standard.
-              </h2>
+              </h1>
             </div>
             <div className="space-y-4 text-text-muted leading-relaxed text-lg max-w-4xl mx-auto">
               <p>

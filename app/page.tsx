@@ -72,21 +72,21 @@ export default function Home() {
               >
                 <Image
                   src="/images/cars/audi_a3/1.jpeg"
-                  alt="Audi Cabriolet"
+                  alt="Audi A3 Convertible Luxury Car Rental Delhi NCR - Quick Luxury Cars"
                   width={1440}
                   height={620}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <Image
                   src="/images/cars/hummer/1.jpeg"
-                  alt="Hummer"
+                  alt="Hummer H2 SUV Luxury Car Rental Delhi NCR - Quick Luxury Cars"
                   width={1440}
                   height={620}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <Image
                   src="/images/cars/mercedes_c300/1.jpeg"
-                  alt="Mercedes C300"
+                  alt="Mercedes C300 Sedan Luxury Car Rental Delhi NCR - Quick Luxury Cars"
                   width={1440}
                   height={620}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"

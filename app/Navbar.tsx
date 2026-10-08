@@ -74,7 +74,7 @@ export default function StickyNavbar() {
           <Link href="/" className="cursor-pointer py-1.5">
             <Image
               src={logo}
-              alt="Logo"
+              alt="Quick Luxury Cars Logo - Premium Car Rental Delhi NCR"
               width={120}
               height={120}
               className="rounded-xl max-h-14 w-auto"
