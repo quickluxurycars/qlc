@@ -1,6 +1,7 @@
 'use client';
 import { useState, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
+import { FaWhatsapp } from 'react-icons/fa';
 import { cars } from '../data/cars';
 
 function ContactUsForm() {
@@ -360,6 +361,14 @@ function ContactUsForm() {
                   className="block text-gold-burnished hover:text-primary transition-colors text-lg"
                 >
                   +91 9899946298
+                </a>
+                <a
+                  href="https://wa.me/919899946298?text=Hi, I'm interested in your luxury car rental services. Please provide more details."
+                  target="_blank"
+                  className="flex items-center gap-2 text-gold-burnished hover:text-primary transition-colors text-lg"
+                >
+                  WhatsApp
+                  <FaWhatsapp size={20} />
                 </a>
               </div>
             </div>

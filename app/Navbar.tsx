@@ -7,7 +7,7 @@ import {
 } from "@material-tailwind/react";
 import Link from "next/link";
 import Image from "next/image";
-import { FaInstagram, FaFacebook } from "react-icons/fa";
+import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { HiMenu, HiX } from "react-icons/hi";
 import logo from "./logo.jpeg";
 import ThemeToggler from "./ThemeToggler";
@@ -94,8 +94,8 @@ export default function StickyNavbar() {
             <a href="https://www.instagram.com/quickluxurycars" target="_blank" className="text-gold-light hover:text-primary transition-colors">
               <FaInstagram size={22} />
             </a>
-            <a href="#" className="text-gold-light hover:text-primary transition-colors">
-              <FaFacebook size={22} />
+            <a href="https://wa.me/919899946298?text=Hi, I'm interested in your luxury car rental services. Please provide more details." target="_blank" className="text-gold-light hover:text-primary transition-colors">
+              <FaWhatsapp size={22} />
             </a>
           </div>
 
@@ -125,8 +125,8 @@ export default function StickyNavbar() {
             <a href="https://www.instagram.com/quickluxurycars" target="_blank" className="text-gold-light">
               <FaInstagram size={22} />
             </a>
-            <a href="#" className="text-gold-light">
-              <FaFacebook size={22} />
+            <a href="https://wa.me/919899946298?text=Hi, I'm interested in your luxury car rental services. Please provide more details." target="_blank" className="text-gold-light">
+              <FaWhatsapp size={22} />
             </a>
           </div>
         </div>

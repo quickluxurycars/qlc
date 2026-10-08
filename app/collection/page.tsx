@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { HiChevronDown, HiChevronUp } from 'react-icons/hi';
+import { FaWhatsapp } from 'react-icons/fa';
 import { Carousel } from '@material-tailwind/react';
 import { cars } from '../data/cars';
 
@@ -71,7 +72,7 @@ export default function Collection() {
                 World-class luxury cars curated for those who demand more.
               </h1>
               <p className="text-lg text-text-muted">
-                Inspect each hand-selected chassis in our climate-conditioned Delhi hangar. Delivered impeccably sanitized, fully insured, and prepared for your arrival.
+                Delivered impeccably sanitized, fully insured, and prepared for your arrival.
               </p>
             </div>
 
@@ -87,38 +88,17 @@ export default function Collection() {
               >
                 All Marquees
               </button>
-              <button
-                className={`px-4 py-2 rounded-full text-sm uppercase tracking-wider transition-all ${
-                  filters.type.includes('Convertible') ? 'bg-primary-container text-on-primary-container' : 'text-text-muted hover:text-text-primary'
-                }`}
-                onClick={() => handleFilterChange('type', 'Convertible')}
-              >
-                Convertibles
-              </button>
-              <button
-                className={`px-4 py-2 rounded-full text-sm uppercase tracking-wider transition-all ${
-                  filters.type.includes('Sedan') ? 'bg-primary-container text-on-primary-container' : 'text-text-muted hover:text-text-primary'
-                }`}
-                onClick={() => handleFilterChange('type', 'Sedan')}
-              >
-                Sedans
-              </button>
-              <button
-                className={`px-4 py-2 rounded-full text-sm uppercase tracking-wider transition-all ${
-                  filters.type.includes('SUV') ? 'bg-primary-container text-on-primary-container' : 'text-text-muted hover:text-text-primary'
-                }`}
-                onClick={() => handleFilterChange('type', 'SUV')}
-              >
-                SUVs
-              </button>
-              <button
-                className={`px-4 py-2 rounded-full text-sm uppercase tracking-wider transition-all ${
-                  filters.type.includes('Luxury Sedan') ? 'bg-primary-container text-on-primary-container' : 'text-text-muted hover:text-text-primary'
-                }`}
-                onClick={() => handleFilterChange('type', 'Luxury Sedan')}
-              >
-                Luxury Sedans
-              </button>
+              {types.map(type => (
+                <button
+                  key={type}
+                  className={`px-4 py-2 rounded-full text-sm uppercase tracking-wider transition-all ${
+                    filters.type.includes(type) ? 'bg-primary-container text-on-primary-container' : 'text-text-muted hover:text-text-primary'
+                  }`}
+                  onClick={() => handleFilterChange('type', type)}
+                >
+                  {type}s
+                </button>
+              ))}
             </div>
           </div>
 
@@ -266,44 +246,31 @@ export default function Collection() {
                           </div>
                         ))}
                       </Carousel>
-                      <div className="absolute top-4 left-4">
-                        <span className="px-4 py-1 rounded-full glass text-gold-light text-xs uppercase tracking-wider">
+                      <div className="absolute top-0 left-0 right-0 flex justify-between px-4 py-2 bg-primary-container/90 backdrop-blur-md">
+                        <span className="text-xs uppercase tracking-wider text-on-primary-container font-semibold">
                           Self-Drive & Chauffeur
                         </span>
-                      </div>
-                      <div className="absolute top-4 right-4">
-                        <span className="px-4 py-1 rounded-full glass text-status-available text-xs uppercase tracking-wider flex items-center gap-1">
-                          <span className="w-1.5 h-1.5 rounded-full bg-status-available"></span> Available
+                        <span className="text-xs uppercase tracking-wider text-on-primary-container font-semibold flex items-center gap-1">
+                          <span className="w-1.5 h-1.5 rounded-full bg-on-primary-container"></span> Available
                         </span>
                       </div>
                     </div>
                     <div className="p-6 flex flex-col flex-grow justify-between gap-4">
                       <div>
-                        <div className="flex items-center justify-between text-text-muted text-xs uppercase tracking-widest mb-1">
-                          <span>{car.brand}</span>
-                          <span className="text-gold-burnished">Delhi NCR Registered</span>
+                        <div className="text-text-muted text-xs uppercase tracking-widest mb-1">
+                          {car.brand}
                         </div>
                         <h3 className="text-xl text-text-primary font-headline-sm">{car.name}</h3>
-                        <p className="text-sm text-text-muted mt-1">{car.type} • {car.seating} Seats • {car.color}</p>
-                      </div>
-
-                      {/* Micro Telemetry Grid */}
-                      <div className="grid grid-cols-3 gap-2 py-3 px-4 rounded-xl bg-surface-container-low text-center">
-                        <div>
-                          <span className="block text-xs text-text-muted uppercase">Seating</span>
-                          <span className="text-lg text-gold-light font-semibold">{car.seating}</span>
-                        </div>
-                        <div>
-                          <span className="block text-xs text-text-muted uppercase">Type</span>
-                          <span className="text-lg text-text-primary font-semibold">{car.type.slice(0, 4)}</span>
-                        </div>
-                        <div>
-                          <span className="block text-xs text-text-muted uppercase">Color</span>
-                          <span className="text-lg text-text-primary font-semibold">{car.color.slice(0, 5)}</span>
+                        <div className="text-sm text-text-muted mt-1 flex flex-wrap gap-x-2 gap-y-0.5">
+                          <span>{car.type}</span>
+                          <span>•</span>
+                          <span>{car.seating} Seats</span>
+                          <span>•</span>
+                          <span>{car.color}</span>
                         </div>
                       </div>
 
-                      <div className="flex items-center justify-between pt-2">
+                      <div className="flex items-center justify-center gap-3 pt-2">
                         <Link
                           href={`/contactus?car=${encodeURIComponent(car.name)}`}
                           className="px-6 py-2.5 rounded-full bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary text-sm uppercase tracking-wider transition-all flex items-center gap-1 shadow-md"
@@ -311,6 +278,15 @@ export default function Collection() {
                           <span>Enquire</span>
                           <span className="text-sm">→</span>
                         </Link>
+                        <a
+                          href={`https://wa.me/919899946298?text=${encodeURIComponent(`Hi, I'm interested in booking the ${car.name}. Please provide more details.`)}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="px-6 py-2.5 rounded-full bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary text-sm uppercase tracking-wider transition-all flex items-center gap-1 shadow-md"
+                        >
+                          <span>WhatsApp</span>
+                          <FaWhatsapp size={16} />
+                        </a>
                       </div>
                     </div>
                   </div>
