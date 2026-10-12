@@ -57,6 +57,10 @@ export default function Footer() {
             <Link href="/aboutus" className="block text-text-muted hover:text-gold-light transition-colors">
               About Us
             </Link>
+            <Link href="/luxury-car-rental/delhi" className="block text-text-muted hover:text-gold-light transition-colors">Car Rental Delhi</Link>
+            <Link href="/luxury-car-rental/noida" className="block text-text-muted hover:text-gold-light transition-colors">Car Rental Noida</Link>
+            <Link href="/luxury-car-rental/gurgaon" className="block text-text-muted hover:text-gold-light transition-colors">Car Rental Gurgaon</Link>
+            <Link href="/services/wedding-car-rental-delhi" className="block text-text-muted hover:text-gold-light transition-colors">Wedding Car Rental</Link>
             <Link href="/contactus" className="block text-text-muted hover:text-gold-light transition-colors">
               Contact us
             </Link>
