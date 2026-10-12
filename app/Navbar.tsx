@@ -50,7 +50,7 @@ export default function StickyNavbar() {
               className="navbar-link"
               onClick={handleNavClick}
               style={{
-                color: isActive ? "var(--brand-gold)" : "white"
+                color: isActive ? "var(--brand-gold)" : "var(--foreground)"
               }}
             >
               {link}
@@ -91,10 +91,10 @@ export default function StickyNavbar() {
         <div className="flex items-center justify-end gap-4">
           {/* Socials (Desktop only) */}
           <div className="hidden lg:flex items-center gap-4">
-            <a href="https://www.instagram.com/quickluxurycars" target="_blank" className="text-gold-light hover:text-primary transition-colors">
+            <a href="https://www.instagram.com/quickluxurycars" target="_blank" className="text-gold-light hover:text-primary transition-colors" style={{ color: 'var(--brand-gold)' }}>
               <FaInstagram size={22} />
             </a>
-            <a href="https://wa.me/919899946298?text=Hi, I'm interested in your luxury car rental services. Please provide more details." target="_blank" className="text-gold-light hover:text-primary transition-colors">
+            <a href="https://wa.me/919899946298?text=Hi, I'm interested in your luxury car rental services. Please provide more details." target="_blank" className="text-gold-light hover:text-primary transition-colors" style={{ color: 'var(--brand-gold)' }}>
               <FaWhatsapp size={22} />
             </a>
           </div>
@@ -105,8 +105,9 @@ export default function StickyNavbar() {
           {/* Mobile Hamburger Icon */}
           <IconButton
             variant="text"
-            className="h-6 w-6 text-inherit lg:hidden"
+            className="h-6 w-6 lg:hidden"
             onClick={() => setOpenNav(!openNav)}
+            style={{ color: 'var(--foreground)' }}
             {...placeholderProps}
           >
             {openNav ? <HiX size={24} /> : <HiMenu size={24} />}
@@ -122,10 +123,10 @@ export default function StickyNavbar() {
         <div className="container mx-auto pb-4">
           {navList}
           <div className="flex items-center gap-x-4 pt-2 border-t border-gray-800">
-            <a href="https://www.instagram.com/quickluxurycars" target="_blank" className="text-gold-light">
+            <a href="https://www.instagram.com/quickluxurycars" target="_blank" className="text-gold-light" style={{ color: 'var(--brand-gold)' }}>
               <FaInstagram size={22} />
             </a>
-            <a href="https://wa.me/919899946298?text=Hi, I'm interested in your luxury car rental services. Please provide more details." target="_blank" className="text-gold-light">
+            <a href="https://wa.me/919899946298?text=Hi, I'm interested in your luxury car rental services. Please provide more details." target="_blank" className="text-gold-light" style={{ color: 'var(--brand-gold)' }}>
               <FaWhatsapp size={22} />
             </a>
           </div>

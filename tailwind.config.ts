@@ -57,8 +57,8 @@ export default withMT({
         "surface-obsidian": "#0A0A0C",
 
         // Text colors
-        "text-primary": "#F7F7F8",
-        "text-muted": "#8E8E99",
+        "text-primary": "var(--text-primary)",
+        "text-muted": "var(--text-muted)",
 
         // Gold color variations
         gold: "#C9A24D",

@@ -18,16 +18,16 @@ export default function HomeHero() {
           <div className="flex flex-wrap items-center justify-between gap-4 mb-8">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-carbon/90 shadow-lg shadow-black/40">
               <span className="w-2 h-2 rounded-full bg-status-available animate-pulse"></span>
-              <span className="text-xs uppercase tracking-widest text-gold-light">Delhi NCR Premier Supercar & Flagship Charter</span>
+              <span className="text-xs uppercase tracking-widest text-gold-light">Delhi NCR, Punjab, Rajasthan, Uttarakhand, Uttar Pradesh Premier Supercar & Flagship Charter</span>
             </div>
             <div className="flex items-center gap-6 text-text-muted text-sm">
               <div className="flex items-center gap-1 uppercase tracking-wider text-on-surface-variant">
                 <span className="text-primary text-lg">✓</span>
-                <span>Chauffeur & Self-Drive</span>
+                <span>Chauffeur-Driven</span>
               </div>
               <div className="hidden sm:flex items-center gap-1 uppercase tracking-wider text-on-surface-variant">
                 <span className="text-primary text-lg">⚡</span>
-                <span>Doorstep White-Glove Handover</span>
+                <span>Professional Chauffeur Service</span>
               </div>
               <div className="hidden md:flex items-center gap-1 uppercase tracking-wider text-on-surface-variant">
                 <span className="text-primary text-lg">★</span>
@@ -64,6 +64,39 @@ export default function HomeHero() {
                 autoplay={true}
                 autoplayDelay={4000}
                 className="h-full"
+                navigation={({ setActiveIndex, activeIndex, length }) => (
+                  <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
+                    {new Array(length).fill("").map((_, i) => (
+                      <button
+                        key={i}
+                        className={`h-3 w-3 rounded-full transition-all duration-300 ${
+                          activeIndex === i ? "bg-primary w-8" : "bg-white/50 hover:bg-white"
+                        }`}
+                        onClick={() => setActiveIndex(i)}
+                      />
+                    ))}
+                  </div>
+                )}
+                prevArrow={({ handlePrev }) => (
+                  <button
+                    onClick={handlePrev}
+                    className="absolute top-2/4 left-4 -translate-y-2/4 w-12 h-12 rounded-full bg-black/30 hover:bg-black/50 backdrop-blur-sm flex items-center justify-center text-white transition-all duration-300 z-50"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                    </svg>
+                  </button>
+                )}
+                nextArrow={({ handleNext }) => (
+                  <button
+                    onClick={handleNext}
+                    className="absolute top-2/4 right-4 -translate-y-2/4 w-12 h-12 rounded-full bg-black/30 hover:bg-black/50 backdrop-blur-sm flex items-center justify-center text-white transition-all duration-300 z-50"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg>
+                  </button>
+                )}
                 placeholder={undefined}
                 onResize={undefined}
                 onResizeCapture={undefined}
@@ -71,22 +104,22 @@ export default function HomeHero() {
                 onPointerLeaveCapture={undefined}
               >
                 <Image
-                  src="/images/cars/audi_a3/1.jpeg"
-                  alt="Audi A3 Convertible Luxury Car Rental Delhi NCR - Quick Luxury Cars"
+                  src="/images/cars/bmw_5_series/1.jpg"
+                  alt="BMW 5 Series Luxury Car Rental Delhi NCR - Quick Luxury Cars"
                   width={1440}
                   height={620}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <Image
-                  src="/images/cars/hummer/1.jpeg"
-                  alt="Hummer H2 SUV Luxury Car Rental Delhi NCR - Quick Luxury Cars"
+                  src="/images/cars/jaguar_xf/1.jpeg"
+                  alt="Jaguar XF Luxury Car Rental Delhi NCR - Quick Luxury Cars"
                   width={1440}
                   height={620}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <Image
-                  src="/images/cars/mercedes_c300/1.jpeg"
-                  alt="Mercedes C300 Sedan Luxury Car Rental Delhi NCR - Quick Luxury Cars"
+                  src="/images/cars/bentley_bentayga/1.jpg"
+                  alt="Bentley Bentayga Luxury Car Rental Delhi NCR - Quick Luxury Cars"
                   width={1440}
                   height={620}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"

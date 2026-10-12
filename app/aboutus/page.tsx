@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'About Quick Luxury Cars | Premium Car Rental in Delhi',
-  description: 'Learn about Quick Luxury Cars, a Delhi-based luxury car rental service offering a curated fleet, doorstep delivery and personalised service across Delhi NCR.',
+  description: 'Learn about Quick Luxury Cars, a Delhi-based luxury car rental service offering a curated fleet, professional chauffeur service and personalised service across Delhi NCR, Punjab, Rajasthan, Uttarakhand, and Uttar Pradesh.',
   alternates: { canonical: '/aboutus' },
 };
 
@@ -43,7 +43,7 @@ export default function AboutUs() {
                 quality, safety, and uncompromising excellence.
               </p>
               <p>
-                What truly sets us apart is our personalized approach. From flexible rental options to doorstep delivery
+                What truly sets us apart is our personalized approach. From flexible rental options to professional chauffeur service
                 and discreet service, every detail is handled with precision and care. We believe luxury should feel
                 effortless—never complicated.
               </p>
@@ -157,7 +157,7 @@ export default function AboutUs() {
           <section className="glass rounded-2xl p-8 md:p-12 text-center border border-gold-subtle">
             <h2 className="text-3xl md:text-4xl font-headline-lg mb-4 text-gold-burnished">Service Area</h2>
             <p className="text-xl text-text-muted">
-              Currently we operate in <span className="font-semibold text-text-primary">Delhi and NCR region</span> only.
+              We operate in <span className="font-semibold text-text-primary">Delhi NCR, Punjab, Rajasthan, Uttarakhand, and Uttar Pradesh</span>.
             </p>
           </section>
 

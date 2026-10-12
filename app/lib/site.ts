@@ -31,48 +31,48 @@ export interface InfoPageData {
 export const CITIES: InfoPageData[] = [
   {
     slug: 'delhi',
-    title: 'Luxury Car Rental in Delhi | Chauffeur & Self-Drive',
+    title: 'Luxury Car Rental in Delhi | Chauffeur-Driven',
     h1: 'Luxury Car Rental in Delhi',
-    description: 'Rent Mercedes, BMW, Rolls Royce, Bentley and more in Delhi. Chauffeur-driven and self-drive luxury cars with doorstep delivery. Book on WhatsApp.',
+    description: 'Rent Mercedes, BMW, Rolls Royce, Bentley and more in Delhi. Chauffeur-driven luxury cars with professional chauffeur. Book on WhatsApp.',
     intro: [
-      'Quick Luxury Cars offers premium chauffeur-driven and self-drive car rental across Delhi, from Lutyens\' Delhi and Connaught Place to South Delhi, Dwarka and Rohini.',
-      'Choose from sedans, SUVs and convertibles by Mercedes, BMW, Rolls Royce, Bentley, Jaguar, Range Rover and more, delivered to your home, hotel or office.',
+      'Quick Luxury Cars offers premium chauffeur-driven car rental across Delhi, from Lutyens\' Delhi and Connaught Place to South Delhi, Dwarka and Rohini.',
+      'Choose from sedans, SUVs and convertibles by Mercedes, BMW, Rolls Royce, Bentley, Jaguar, Range Rover and more. Our professional chauffeur arrives at your location with the car.',
     ],
     sections: [
       { heading: 'Popular uses in Delhi', body: 'Weddings and baraat transport, IGI Airport pick-ups and drops, corporate visits, hotel arrivals, photoshoots and special occasions.' },
       { heading: 'Areas we serve in Delhi', body: 'Connaught Place, Chanakyapuri, Vasant Vihar, Greater Kailash, Defence Colony, Aerocity, Dwarka, Rohini, Pitampura and the rest of Delhi.' },
     ],
     faqs: [
-      { q: 'Do you offer luxury car rental with a chauffeur in Delhi?', a: 'Yes. Most cars in our fleet are available with a professional chauffeur, and selected cars are available for self-drive. Message us on WhatsApp to confirm availability.' },
-      { q: 'Can the car be delivered to my hotel or home in Delhi?', a: 'Yes, we offer doorstep handover across Delhi NCR. Share your location when you enquire.' },
+      { q: 'Do you offer luxury car rental with a chauffeur in Delhi?', a: 'Yes. All cars in our fleet are available with a professional chauffeur who stays with the car throughout your journey. Message us on WhatsApp to confirm availability.' },
+      { q: 'Where can the chauffeur arrive with the car in Delhi?', a: 'Our chauffeur arrives at your location with the car. Share your location when you enquire.' },
     ],
   },
   {
     slug: 'noida',
-    title: 'Luxury Car Rental in Noida | Chauffeur & Self-Drive',
+    title: 'Luxury Car Rental in Noida | Chauffeur-Driven',
     h1: 'Luxury Car Rental in Noida',
-    description: 'Premium luxury car rental in Noida and Greater Noida. Mercedes, BMW, Audi, Range Rover and more with chauffeur or self-drive options.',
+    description: 'Premium luxury car rental in Noida and Greater Noida. Mercedes, BMW, Audi, Range Rover and more with chauffeur.',
     intro: [
-      'Looking for a luxury car on rent in Noida? Quick Luxury Cars delivers premium sedans, SUVs and convertibles to Noida and Greater Noida for weddings, events, business and leisure.',
-      'Whether you need a Mercedes S Class for a corporate day or a Bentley Bentayga for a celebration, our team arranges a clean, inspected car at your doorstep.',
+      'Looking for a luxury car on rent in Noida? Quick Luxury Cars provides premium sedans, SUVs and convertibles to Noida and Greater Noida for weddings, events, business and leisure.',
+      'Whether you need a Mercedes S Class for a corporate day or a Bentley Bentayga for a celebration, our professional chauffeur arrives at your location with the car.',
     ],
     sections: [
       { heading: 'Areas we serve in Noida', body: 'Sector 18, Sector 62, Sector 50, Noida Expressway, Greater Noida, Greater Noida West and nearby sectors.' },
       { heading: 'Popular uses', body: 'Wedding car hire, airport transfers to IGI and Jewar, corporate meetings, film and photo shoots, anniversaries and birthdays.' },
     ],
     faqs: [
-      { q: 'Do you provide luxury cars on rent in Noida?', a: 'Yes. We deliver chauffeur-driven and selected self-drive luxury cars across Noida and Greater Noida.' },
+      { q: 'Do you provide luxury cars on rent in Noida?', a: 'Yes. Our professional chauffeur arrives at your location with the car across Noida and Greater Noida.' },
       { q: 'How do I book a car in Noida?', a: 'Pick a car from our collection and send your date, duration and pick-up location on WhatsApp or the contact form.' },
     ],
   },
   {
     slug: 'gurgaon',
-    title: 'Luxury Car Rental in Gurgaon | Chauffeur & Self-Drive',
+    title: 'Luxury Car Rental in Gurgaon | Chauffeur-Driven',
     h1: 'Luxury Car Rental in Gurgaon',
-    description: 'Rent luxury cars in Gurgaon (Gurugram). Mercedes, BMW, Rolls Royce and SUVs with chauffeur or self-drive. Doorstep delivery across Gurgaon.',
+    description: 'Rent luxury cars in Gurgaon (Gurugram). Mercedes, BMW, Rolls Royce and SUVs with chauffeur. Professional chauffeur arrives at your location across Gurgaon.',
     intro: [
-      'Quick Luxury Cars provides luxury car rental in Gurgaon (Gurugram) for corporate travel, weddings, events and weekend drives.',
-      'Our fleet includes Mercedes, BMW, Rolls Royce, Maybach, Range Rover and more, available with a professional chauffeur or for self-drive on selected models.',
+      'Quick Luxury Cars provides luxury car rental in Gurgaon (Gurugram) for corporate travel, weddings, events and special occasions.',
+      'Our fleet includes Mercedes, BMW, Rolls Royce, Maybach, Range Rover and more, available with a professional chauffeur who stays with the car throughout your journey.',
     ],
     sections: [
       { heading: 'Areas we serve in Gurgaon', body: 'Cyber Hub, Golf Course Road, DLF Phases 1-5, Sohna Road, MG Road, Udyog Vihar and New Gurgaon.' },
@@ -80,36 +80,36 @@ export const CITIES: InfoPageData[] = [
     ],
     faqs: [
       { q: 'Can I hire a luxury car with driver in Gurgaon?', a: 'Yes. Chauffeur-driven hire is available across Gurgaon for hourly, half-day and full-day bookings.' },
-      { q: 'Do you deliver to Cyber Hub and Golf Course Road?', a: 'Yes, we deliver across Gurgaon. Share your address when you enquire.' },
+      { q: 'Do you serve Cyber Hub and Golf Course Road?', a: 'Yes, our chauffeur arrives at your location across Gurgaon. Share your address when you enquire.' },
     ],
   },
   {
     slug: 'ghaziabad',
-    title: 'Luxury Car Rental in Ghaziabad | Chauffeur & Self-Drive',
+    title: 'Luxury Car Rental in Ghaziabad | Chauffeur-Driven',
     h1: 'Luxury Car Rental in Ghaziabad',
-    description: 'Luxury car rental in Ghaziabad: Indirapuram, Vaishali, Raj Nagar Extension and more. Chauffeur-driven and self-drive Mercedes, BMW and SUVs.',
+    description: 'Luxury car rental in Ghaziabad: Indirapuram, Vaishali, Raj Nagar Extension and more. Chauffeur-driven Mercedes, BMW and SUVs.',
     intro: [
       'Quick Luxury Cars offers premium car rental in Ghaziabad for weddings, family functions, business travel and airport transfers.',
-      'We deliver sedans, SUVs and convertibles to Indirapuram, Vaishali, Vasundhara, Raj Nagar Extension, Kaushambi and nearby areas.',
+      'Our professional chauffeur arrives at your location with sedans, SUVs and convertibles in Indirapuram, Vaishali, Vasundhara, Raj Nagar Extension, Kaushambi and nearby areas.',
     ],
     sections: [
       { heading: 'Popular uses', body: 'Wedding car hire, baraat and bride entry, birthday and anniversary celebrations, airport drops and corporate trips.' },
     ],
     faqs: [
-      { q: 'Do you rent luxury cars in Ghaziabad?', a: 'Yes. We deliver chauffeur-driven and selected self-drive luxury cars to Ghaziabad.' },
+      { q: 'Do you rent luxury cars in Ghaziabad?', a: 'Yes. Our professional chauffeur arrives at your location with the car in Ghaziabad.' },
     ],
   },
   {
     slug: 'faridabad',
-    title: 'Luxury Car Rental in Faridabad | Chauffeur & Self-Drive',
+    title: 'Luxury Car Rental in Faridabad | Chauffeur-Driven',
     h1: 'Luxury Car Rental in Faridabad',
-    description: 'Rent luxury cars in Faridabad. Mercedes, BMW, Audi and SUVs with chauffeur or self-drive. Doorstep delivery across Faridabad and Delhi NCR.',
+    description: 'Rent luxury cars in Faridabad. Mercedes, BMW, Audi and SUVs with chauffeur. Professional chauffeur arrives at your location across Faridabad and Delhi NCR.',
     intro: [
       'Quick Luxury Cars provides luxury car rental in Faridabad for weddings, events, business travel and special occasions.',
-      'Choose a sedan, SUV or convertible from our fleet and we will deliver it to your door in Faridabad or anywhere in Delhi NCR.',
+      'Choose a sedan, SUV or convertible from our fleet and our professional chauffeur will arrive at your location in Faridabad or anywhere in Delhi NCR.',
     ],
     sections: [
-      { heading: 'Popular uses', body: 'Wedding hire, corporate transport, airport transfers, celebrations and weekend drives.' },
+      { heading: 'Popular uses', body: 'Wedding hire, corporate transport, airport transfers, celebrations and special occasions.' },
     ],
     faqs: [
       { q: 'Do you offer luxury car hire in Faridabad?', a: 'Yes. Contact us on WhatsApp with your date and duration and we will confirm availability.' },
@@ -124,8 +124,8 @@ export const SERVICES: InfoPageData[] = [
     h1: 'Wedding Car Rental in Delhi NCR',
     description: 'Luxury wedding car rental in Delhi NCR. Rolls Royce, Bentley, Mercedes and more for baraat, bride entry and vidaai, with professional chauffeurs.',
     intro: [
-      'Make your wedding entry unforgettable with a luxury car from Quick Luxury Cars. We provide Rolls Royce, Bentley, Maybach, Mercedes and other premium cars for weddings across Delhi, Noida, Gurgaon, Ghaziabad and Faridabad.',
-      'Cars are delivered clean and ready, with a professional chauffeur for the day.',
+      'Make your wedding entry unforgettable with a luxury car from Quick Luxury Cars. We provide Rolls Royce, Bentley, Maybach, Mercedes and other premium cars for weddings across Delhi NCR, Punjab, Rajasthan, Uttarakhand, and Uttar Pradesh.',
+      'Our professional chauffeur arrives at your location with a clean, ready car and stays with you throughout the event.',
     ],
     sections: [
       { heading: 'Ideal for', body: 'Baraat, groom entry, bride entry, vidaai, pre-wedding shoots, reception arrivals and guest transport.' },
@@ -133,7 +133,7 @@ export const SERVICES: InfoPageData[] = [
     ],
     faqs: [
       { q: 'Which cars are best for a wedding?', a: 'Rolls Royce, Bentley Bentayga, Maybach and Mercedes S Class are popular for wedding entries. Browse the collection and message us for availability.' },
-      { q: 'Is a chauffeur included for weddings?', a: 'Wedding bookings are normally chauffeur-driven. Confirm details when you enquire.' },
+      { q: 'Is a chauffeur included for weddings?', a: 'Yes, a professional chauffeur is included and stays with the car throughout your wedding event.' },
     ],
   },
   {
@@ -153,27 +153,12 @@ export const SERVICES: InfoPageData[] = [
     ],
   },
   {
-    slug: 'self-drive-luxury-cars-delhi',
-    title: 'Self-Drive Luxury Car Rental in Delhi NCR',
-    h1: 'Self-Drive Luxury Cars in Delhi NCR',
-    description: 'Self-drive luxury car rental in Delhi NCR. Drive a Mercedes, BMW or Audi convertible yourself, with doorstep handover.',
-    intro: [
-      'Prefer to drive? Selected cars in the Quick Luxury Cars fleet are available for self-drive across Delhi NCR, with doorstep handover.',
-    ],
-    sections: [
-      { heading: 'Before you book', body: 'A valid driving licence and ID proof are typically required. Message us on WhatsApp to confirm eligibility, deposit and availability for your chosen car.' },
-    ],
-    faqs: [
-      { q: 'Which cars are available for self-drive?', a: 'Availability varies by car and date. Send us the model you like on WhatsApp and we will confirm.' },
-    ],
-  },
-  {
     slug: 'airport-transfer-delhi-luxury-car',
     title: 'Luxury Airport Transfer in Delhi | IGI Airport Car Rental',
     h1: 'Luxury Airport Transfers in Delhi NCR',
     description: 'Luxury airport pick-up and drop at Delhi IGI Airport. Mercedes, BMW and SUVs with professional chauffeurs across Delhi NCR.',
     intro: [
-      'Start or end your trip in comfort with a luxury airport transfer to and from Indira Gandhi International Airport. Our chauffeurs serve Delhi, Noida, Gurgaon, Ghaziabad and Faridabad.',
+      'Start or end your trip in comfort with a luxury airport transfer to and from Indira Gandhi International Airport. Our chauffeurs serve Delhi NCR, Punjab, Rajasthan, Uttarakhand, and Uttar Pradesh.',
     ],
     sections: [
       { heading: 'How it works', body: 'Share your flight details and address on WhatsApp. We confirm the car and chauffeur for your time.' },
@@ -195,7 +180,7 @@ export const orgSchema = () => ({
   image: absUrl('/images/cars/rolls_royce/1.jpeg'),
   priceRange: '₹₹₹',
   address: { '@type': 'PostalAddress', addressLocality: 'Delhi', addressRegion: 'Delhi', addressCountry: 'IN' },
-  areaServed: ['Delhi', 'Noida', 'Gurgaon', 'Ghaziabad', 'Faridabad'].map((n) => ({ '@type': 'City', name: n })),
+  areaServed: ['Delhi', 'Noida', 'Gurgaon', 'Ghaziabad', 'Faridabad', 'Punjab', 'Rajasthan', 'Uttarakhand', 'Uttar Pradesh'].map((n) => ({ '@type': 'City', name: n })),
   sameAs: [SITE.instagram],
 });
 

@@ -3,7 +3,7 @@ import "./globals.css";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
-import { Libre_Baskerville, Playfair_Display, Plus_Jakarta_Sans } from 'next/font/google';
+import { Libre_Baskerville, Playfair_Display, Plus_Jakarta_Sans, Montserrat } from 'next/font/google';
 import { Metadata } from 'next';
 
 const libreBaskerville = Libre_Baskerville({
@@ -22,11 +22,17 @@ const plusJakartaSans = Plus_Jakarta_Sans({
   variable: '--font-plus-jakarta-sans',
 });
 
+const montserrat = Montserrat({
+  weight: ['400', '700'],
+  subsets: ['latin'],
+  variable: '--font-montserrat',
+});
+
 export const metadata: Metadata = {
-  title: 'Luxury Car Rental in Delhi NCR | Chauffeur & Self-Drive | Quick Luxury Cars',
+  title: 'Luxury Car Rental in Delhi NCR | Chauffeur-Driven | Quick Luxury Cars',
   alternates: { canonical: '/' },
-  description: 'Experience luxury car rental in Delhi NCR with Quick Luxury Cars. Rent Mercedes, BMW, Audi, Rolls Royce, Bentley & more. Premium chauffeur and self-drive services for weddings, events, and travel.',
-  keywords: 'luxury car rental Delhi NCR, premium car hire, Mercedes rental, BMW rental, Audi rental, Rolls Royce rental, Bentley rental, chauffeur service Delhi, self-drive luxury cars, wedding car rental, airport transfer Delhi, supercar rental India',
+  description: 'Experience luxury car rental in Delhi NCR with Quick Luxury Cars. Rent Mercedes, BMW, Audi, Rolls Royce, Bentley & more. Premium chauffeur services for weddings, events, and travel across Delhi NCR, Punjab, Rajasthan, Uttarakhand, and Uttar Pradesh.',
+  keywords: 'luxury car rental Delhi NCR, premium car hire, Mercedes rental, BMW rental, Audi rental, Rolls Royce rental, Bentley rental, chauffeur service Delhi, wedding car rental, airport transfer Delhi, supercar rental India, luxury car rental Punjab, luxury car rental Rajasthan, luxury car rental Uttarakhand, luxury car rental Uttar Pradesh',
   authors: [{ name: 'Quick Luxury Cars' }],
   creator: 'Quick Luxury Cars',
   publisher: 'Quick Luxury Cars',
@@ -41,7 +47,7 @@ export const metadata: Metadata = {
     locale: 'en_IN',
     url: 'https://quickluxurycars.in',
     title: 'Quick Luxury Cars - Premium Car Rental in Delhi NCR',
-    description: 'Rent luxury cars in Delhi NCR. Mercedes, BMW, Audi, Rolls Royce, Bentley & more. Chauffeur and self-drive services available.',
+    description: 'Rent luxury cars in Delhi NCR. Mercedes, BMW, Audi, Rolls Royce, Bentley & more. Chauffeur services available.',
     siteName: 'Quick Luxury Cars',
     images: [
       {
@@ -77,7 +83,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${libreBaskerville.variable} ${playfairDisplay.variable} ${plusJakartaSans.variable}`}>
+    <html lang="en" className={`${libreBaskerville.variable} ${playfairDisplay.variable} ${plusJakartaSans.variable} ${montserrat.variable}`}>
       <body>
         <Navbar />
         {children}
