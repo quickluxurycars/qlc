@@ -23,7 +23,8 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'Quick Luxury Cars - Premium Car Rental in Delhi NCR | Chauffeur & Self-Drive',
+  title: 'Luxury Car Rental in Delhi NCR | Chauffeur & Self-Drive | Quick Luxury Cars',
+  alternates: { canonical: '/' },
   description: 'Experience luxury car rental in Delhi NCR with Quick Luxury Cars. Rent Mercedes, BMW, Audi, Rolls Royce, Bentley & more. Premium chauffeur and self-drive services for weddings, events, and travel.',
   keywords: 'luxury car rental Delhi NCR, premium car hire, Mercedes rental, BMW rental, Audi rental, Rolls Royce rental, Bentley rental, chauffeur service Delhi, self-drive luxury cars, wedding car rental, airport transfer Delhi, supercar rental India',
   authors: [{ name: 'Quick Luxury Cars' }],
@@ -77,91 +78,6 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${libreBaskerville.variable} ${playfairDisplay.variable} ${plusJakartaSans.variable}`}>
-      <head>
-        <meta name="google-site-verification" content="9GipYLPFgBelUCE3suvs7d4yEVWS6d5xcalvtKWe-Pg" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "LocalBusiness",
-              "name": "Quick Luxury Cars",
-              "description": "Premium luxury car rental service in Delhi NCR offering chauffeur and self-drive options for Mercedes, BMW, Audi, Rolls Royce, Bentley and more.",
-              "url": "https://quickluxurycars.in",
-              "telephone": "+919899946298",
-              "email": "quickluxurycars@gmail.com",
-              "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Delhi NCR",
-                "addressRegion": "Delhi",
-                "addressCountry": "IN"
-              },
-              "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": "28.6139",
-                "longitude": "77.2090"
-              },
-              "areaServed": ["Delhi", "Noida", "Gurgaon", "Faridabad", "Ghaziabad"],
-              "openingHours": "Mo-Su 00:00-23:59",
-              "priceRange": "₹₹₹",
-              "image": "https://quickluxurycars.in/images/cars/rolls_royce/1.jpeg",
-              "sameAs": [
-                "https://www.instagram.com/quickluxurycars"
-              ]
-            })
-          }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "ItemList",
-              "itemListElement": [
-                {
-                  "@type": "ListItem",
-                  "position": 1,
-                  "item": {
-                    "@type": "Car",
-                    "name": "Audi A3",
-                    "brand": { "@type": "Brand", "name": "Audi" },
-                    "vehicleConfiguration": "Convertible",
-                    "vehicleSeatingCapacity": 5,
-                    "color": "Black",
-                    "image": "https://quickluxurycars.in/images/cars/audi_a3/1.jpeg"
-                  }
-                },
-                {
-                  "@type": "ListItem",
-                  "position": 2,
-                  "item": {
-                    "@type": "Car",
-                    "name": "Mercedes E400",
-                    "brand": { "@type": "Brand", "name": "Mercedes" },
-                    "vehicleConfiguration": "Sedan",
-                    "vehicleSeatingCapacity": 5,
-                    "color": "White",
-                    "image": "https://quickluxurycars.in/images/cars/mercedes_e400/1.jpeg"
-                  }
-                },
-                {
-                  "@type": "ListItem",
-                  "position": 3,
-                  "item": {
-                    "@type": "Car",
-                    "name": "Mercedes G63",
-                    "brand": { "@type": "Brand", "name": "Mercedes" },
-                    "vehicleConfiguration": "SUV",
-                    "vehicleSeatingCapacity": 5,
-                    "color": "Black",
-                    "image": "https://quickluxurycars.in/images/cars/mercedes_g63/1.jpeg"
-                  }
-                }
-              ]
-            })
-          }}
-        />
-      </head>
       <body>
         <Navbar />
         {children}

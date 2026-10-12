@@ -1,3 +1,11 @@
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'About Quick Luxury Cars | Premium Car Rental in Delhi',
+  description: 'Learn about Quick Luxury Cars, a Delhi-based luxury car rental service offering a curated fleet, doorstep delivery and personalised service across Delhi NCR.',
+  alternates: { canonical: '/aboutus' },
+};
+
 import { FaWhatsapp } from 'react-icons/fa';
 
 export default function AboutUs() {
