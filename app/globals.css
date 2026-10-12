@@ -11,13 +11,19 @@
 
 :root {
   --background: #FFFFFF;
-  --foreground: #000000;
+  --foreground: #1a1a1a;
+  --text-primary: #1a1a1a;
+  --text-muted: #666666;
   --brand-gold: #C9A24D;
+  --gold-light: #B8860B;
 }
 
 .dark {
   --background: #000000;
   --foreground: #FFFFFF;
+  --text-primary: #F7F7F8;
+  --text-muted: #8E8E99;
+  --gold-light: #F3E5AB;
 }
 
 /* 2. Global Resets - Stop the blue! */
@@ -73,10 +79,13 @@ body::before {
 
 /* 3. Your specific class */
 .navbar-link {
-  font-family: var(--font-libre-baskerville), 'Libre Baskerville', serif;
-  font-size: 24px;
+  font-family: var(--font-montserrat), 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
   line-height: 1;
   white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
   transition: color 0.3s ease;
 }
 
@@ -86,6 +95,16 @@ body::before {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.dark .glass {
+  background: rgba(18, 18, 22, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+html:not(.dark) .glass {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .glass-light {

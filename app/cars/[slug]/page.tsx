@@ -13,8 +13,8 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
   const car = getCarBySlug(params.slug);
   if (!car) return {};
-  const title = `${car.name} Rental in Delhi NCR | Chauffeur & Self-Drive`;
-  const description = `Rent the ${car.name} (${car.type}, ${car.seating} seats, ${car.color}) in Delhi, Noida, Gurgaon and Ghaziabad. Chauffeur-driven or self-drive with doorstep delivery.`;
+  const title = `${car.name} Rental in Delhi NCR | Chauffeur-Driven`;
+  const description = `Rent the ${car.name} (${car.type}, ${car.seating} seats, ${car.color}) in Delhi, Noida, Gurgaon and Ghaziabad. Chauffeur-driven service with chauffeur arriving at your location.`;
   const url = `/cars/${carSlug(car)}`;
   return {
     title,
@@ -30,8 +30,8 @@ export default function CarPage({ params }: { params: { slug: string } }) {
   if (!car) notFound();
   const path = `/cars/${carSlug(car)}`;
   const faqs = [
-    { q: `Can I rent the ${car.name} with a chauffeur?`, a: `Yes, the ${car.name} is available with a professional chauffeur. Self-drive is available on selected cars; confirm on WhatsApp.` },
-    { q: `Where can the ${car.name} be delivered?`, a: 'We deliver across Delhi, Noida, Gurgaon, Ghaziabad and Faridabad.' },
+    { q: `Can I rent the ${car.name} with a chauffeur?`, a: `Yes, the ${car.name} is available with a professional chauffeur who stays with the car throughout your journey.` },
+    { q: `Where can the chauffeur arrive with the car?`, a: 'Our chauffeur arrives at your location with the car across Delhi NCR, Punjab, Rajasthan, Uttarakhand, and Uttar Pradesh.' },
   ];
   const wa = `https://wa.me/919899946298?text=${encodeURIComponent(`Hi, I'd like to rent the ${car.name}. Please share availability and rates.`)}`;
   return (
@@ -42,7 +42,7 @@ export default function CarPage({ params }: { params: { slug: string } }) {
         '@context': 'https://schema.org',
         '@type': 'Product',
         name: `${car.name} Rental in Delhi NCR`,
-        description: `${car.name} ${car.type} for rent with chauffeur or self-drive in Delhi NCR.`,
+        description: `${car.name} ${car.type} for rent with chauffeur in Delhi NCR.`,
         brand: { '@type': 'Brand', name: car.brand },
         category: `${car.type} car rental`,
         color: car.color,
@@ -54,7 +54,7 @@ export default function CarPage({ params }: { params: { slug: string } }) {
       </nav>
       <h1 className="text-4xl md:text-5xl text-text-primary font-headline-lg">{car.name} Rental in Delhi NCR</h1>
       <p className="text-lg text-text-muted">
-        {car.brand} {car.name} · {car.type} · {car.seating} seats · {car.color}. Available with chauffeur, and self-drive on selected dates, across Delhi, Noida, Gurgaon, Ghaziabad and Faridabad.
+        {car.brand} {car.name} · {car.type} · {car.seating} seats · {car.color}. Our professional chauffeur arrives at your location with the car and stays throughout your journey across Delhi NCR, Punjab, Rajasthan, Uttarakhand, and Uttar Pradesh.
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {car.images.map((src, i) => (

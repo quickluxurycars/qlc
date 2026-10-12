@@ -73,7 +73,7 @@ export default function CollectionClient() {
                 World-class luxury cars curated for those who demand more.
               </h1>
               <p className="text-lg text-text-muted">
-                Delivered impeccably sanitized, fully insured, and prepared for your arrival.
+                Our professional chauffeur arrives with impeccably sanitized, fully insured cars prepared for your arrival.
               </p>
             </div>
 
@@ -249,7 +249,7 @@ export default function CollectionClient() {
                       </Carousel>
                       <div className="absolute top-0 left-0 right-0 flex justify-between px-4 py-2 bg-primary-container/90 backdrop-blur-md">
                         <span className="text-xs uppercase tracking-wider text-on-primary-container font-semibold">
-                          Self-Drive & Chauffeur
+                          Chauffeur-Driven
                         </span>
                         <span className="text-xs uppercase tracking-wider text-on-primary-container font-semibold flex items-center gap-1">
                           <span className="w-1.5 h-1.5 rounded-full bg-on-primary-container"></span> Available

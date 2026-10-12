@@ -6,7 +6,7 @@ import { absUrl, carSlug, breadcrumbSchema } from '../lib/site';
 
 export const metadata: Metadata = {
   title: 'Luxury Car Collection | Rent Mercedes, BMW, Rolls Royce in Delhi NCR',
-  description: 'Browse our luxury car fleet in Delhi NCR: Rolls Royce, Bentley Bentayga, Mercedes S Class, Maybach, G63, BMW 7 Series, Range Rover and more.',
+  description: 'Browse our luxury car fleet in Delhi NCR: Rolls Royce, Bentley Bentayga, Mercedes S Class, Maybach, G63, BMW 7 Series, Range Rover and more. Available across Delhi NCR, Punjab, Rajasthan, Uttarakhand, and Uttar Pradesh.',
   alternates: { canonical: '/collection' },
 };
 
