@@ -6,7 +6,6 @@ import { cars } from '../../data/cars';
 import JsonLd from '../../JsonLd';
 import { absUrl, carSlug, getCarBySlug, breadcrumbSchema, faqSchema } from '../../lib/site';
 
-export const dynamicParams = false;
 export function generateStaticParams() {
   return cars.map((c) => ({ slug: carSlug(c) }));
 }

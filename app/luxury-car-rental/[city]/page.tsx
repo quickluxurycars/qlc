@@ -3,7 +3,6 @@ import { notFound } from 'next/navigation';
 import InfoPage from '../../InfoPage';
 import { CITIES } from '../../lib/site';
 
-export const dynamicParams = false;
 export function generateStaticParams() {
   return CITIES.map((p) => ({ city: p.slug }));
 }
